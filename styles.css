@@ -20,7 +20,6 @@ align-items: center;
      color: rgb(255, 255, 255);
      justify-content: center;
      border-radius: 10px;
-     z-index: 1000;
      perspective: 1000px;
      user-select: none;
      overflow: hidden;
@@ -169,16 +168,6 @@ transform: scale(1.1);
 }
 
 
-#x::before{
-     content: "";
-     font-size: 1rem;
-     transform: rotate(-70deg);
-     width: 10%;
-     z-index: 1;
-     background-color: rgb(120, 130, 222);
-     border-radius: 80%;
-     height: 40px;
-}
 
 body{
      display: flex;
@@ -186,3 +175,200 @@ body{
      align-items: center;
      flex-direction: column;
 }
+
+.bubble{
+     overflow: hidden;
+     display: flex;
+     border-radius: 50px;
+     width: 40px;
+     transition-duration: 0.3s;
+     color: cyan;
+     height: 40px;
+     animation: drop 10s  linear infinite;
+     background:linear-gradient(to bottom, rgb(124, 124, 126),rgb(255, 255, 255));
+}
+
+
+.bubble:hover{
+transform: scale(1.2);
+opacity: 0;
+}
+@keyframes drop{
+     0%{
+          position: fixed;
+          overflow: hidden;
+          margin-top: -200%;
+     }
+     100%{
+          position: fixed;
+          overflow: hidden;
+          margin-top: 200%;
+
+     }
+}
+
+#no1{
+position: absolute;
+z-index: 1;
+margin-top: -140%;
+margin-left: 40%;
+}
+
+
+.bubble2{
+     overflow: hidden;
+     display: flex;
+     border-radius: 50px;
+     width: 40px;
+     transition-duration: 0.3s;
+     color: cyan;
+     height: 40px;
+     animation: drop2 10s  linear infinite;
+     background:linear-gradient(to bottom, rgb(62, 62, 220),rgb(168, 170, 244));
+}
+
+
+.bubble2:hover{
+transform: scale(1.2);
+opacity: 0;
+}
+@keyframes drop2{
+     0%{
+          position: fixed;
+          overflow: hidden;
+          margin-top: -200%;
+     }
+     100%{
+          position: fixed;
+          overflow: hidden;
+          margin-top: 200%;
+
+     }
+}
+
+#no2{
+position: absolute;
+z-index: 1;
+margin-top: 120%;
+margin-left: -20%;
+}
+
+
+.bubble3{
+     overflow: hidden;
+     display: flex;
+     border-radius: 50px;
+     width: 40px;
+     transition-duration: 0.3s;
+     color: cyan;
+     height: 40px;
+     animation: drop3 13s  linear infinite;
+     background:linear-gradient(to right, rgb(12, 235, 239),rgb(238, 238, 240));
+}
+
+
+.bubble3:hover{
+transform: scale(1.2);
+opacity: 0;
+}
+@keyframes drop3{
+     0%{
+          position: fixed;
+          overflow: hidden;
+          margin-top: -200%;
+     }
+     100%{
+          position: fixed;
+          overflow: hidden;
+          margin-top: 200%;
+
+     }
+}
+
+
+#no3{
+     position: absolute;
+     z-index: 1;
+     margin-left: -80%;
+     }
+
+
+
+
+     
+.bubble4{
+     overflow: hidden;
+     display: flex;
+     border-radius: 50px;
+     width: 40px;
+     transition-duration: 0.3s;
+     color: cyan;
+     height: 40px;
+     animation: drop4 5s  linear infinite;
+     background:linear-gradient(to right, rgb(236, 29, 139),rgb(232, 232, 242));
+}
+
+
+.bubble4:hover{
+transform: scale(1.2);
+opacity: 0;
+}
+@keyframes drop4{
+     0%{
+          position: fixed;
+          overflow: hidden;
+          margin-top: -200%;
+     }
+     100%{
+          position: fixed;
+          overflow: hidden;
+          margin-top: 200%;
+
+     }
+}
+
+
+#no4{
+     position: absolute;
+     z-index: 1;
+     margin-left: -10%;
+     }
+
+     
+.bubble5{
+     overflow: hidden;
+     display: flex;
+     border-radius: 50px;
+     width: 40px;
+     transition-duration: 0.3s;
+     color: cyan;
+     height: 40px;
+     animation: drop5 6s  linear infinite;
+     background:linear-gradient(to right, rgb(33, 203, 73),rgb(233, 233, 238));
+}
+
+
+.bubble5:hover{
+transform: scale(1.2);
+opacity: 0;
+}
+@keyframes drop5{
+     0%{
+          position: fixed;
+          overflow: hidden;
+          margin-top: -200%;
+     }
+     100%{
+          position: fixed;
+          overflow: hidden;
+          margin-top: 200%;
+
+     }
+}
+
+
+#no5{
+     position: absolute;
+     z-index: 1;
+     margin-left: -30%;
+     }
