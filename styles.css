@@ -3,6 +3,186 @@
      margin: 0;
 }
 
-h1{
-     padding: 05%;
+
+.main{
+     width: 100%;
+     height:100vh;
+     flex-direction: column;
+justify-content: center;
+background-color: aliceblue;
+align-items: center;
+     display: flex;
+}
+
+.box1{
+     width: 50%;
+     display: flex;
+     color: rgb(255, 255, 255);
+     justify-content: center;
+     border-radius: 10px;
+     z-index: 1000;
+     perspective: 1000px;
+     user-select: none;
+     overflow: hidden;
+     transition-duration: 0.3s;
+     align-items: center;
+     flex-direction: column;
+     backface-visibility: hidden;
+     background-color: #451adf ;
+     padding-bottom: 5%;
+     margin-bottom: 10%;
+
+}
+
+
+.box2{
+     width: 49%;
+     height: 38.4%;
+     display: flex;
+     color: rgb(255, 255, 255);
+     justify-content: center;
+     border-radius: 10px;
+     user-select: none;
+     transition-duration: 0.3s;
+     align-items: center;
+     flex-direction: column;
+     background-color:gold;
+     padding-bottom: 5%;
+
+}
+
+
+a{
+     text-decoration: none;
+     font-size: max(3rem);
+     font-size: min(0.80rem);
+font-family: fira;
+font-weight: bold;
+     padding-top: 20px;
+     color: rgb(231, 227, 227);
+}
+
+@font-face {
+     font-family: 'fira';
+     src: url(FiraSans-Regular.ttf);
+}
+.number{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     font-family: fira;
+     align-items: center;
+     width: 90px;
+     background:linear-gradient(to bottom,rgb(2, 2, 143),#451adf) ;
+    height: 90px;
+    margin-top: 15%;
+    transition-duration: 0.3s;
+     border-radius: 50px;
+     transform: scale(1.3);
+}
+
+
+.number:active{
+     transform: scale(1.1);
+     }
+
+p{
+     font-weight: bolder;
+     font-size: 26px;
+}
+
+#p2{
+     font-size: 0.60rem;
+     color: rgb(221, 221, 221);
+     opacity: 1;
+}
+
+#g{
+     font-weight: normal;
+     font-size: 1.2rem;
+     padding-top: 8%;
+     z-index: 1000;
+     font-family: fira;
+}
+
+
+#y{
+     font-weight: normal;
+     font-size: 0.7rem;
+     padding: 16px;
+     opacity:1;
+     color: rgb(227, 226, 226);
+     font-family: fira;
+}
+
+.button{
+     width: 90px;
+     height: 35px;
+     background-color: gold;
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
+     user-select: none;
+     box-shadow: 0px 5px 10px 0px rgb(128, 128, 130);
+     font-family: fira;
+     transform: scale(1.4);
+     transition-duration: 0.3s;
+}
+
+.button:active{
+     transform: scale(1.1);
+}
+
+#x{
+     font-size: 1rem;
+     margin-top: -30px;
+     margin-left: -80%;
+     /* transform: rotate(-60deg); */
+     width: 90px;
+     background: linear-gradient(to bottom,rgb(4, 4, 155),rgb(103, 103, 235));
+     z-index: -1;
+     z-index: 1;
+     opacity: 0.5;
+     background-color: rgb(120, 130, 222);
+     border-radius: 80%;
+     transition-duration: 0.2s;
+     transform: scale(1.3);
+     height: 90px;
+}
+
+#x:active{
+transform: scale(1.1);
+}
+
+
+#z{
+     font-size: 0rem;
+     transform: rotate(40deg);
+     width: 10%;
+     margin-left: 10%;
+     z-index: 1;
+     background-color: rgb(244, 245, 153);
+     border-radius: 80%;
+     height: 20px;
+}
+
+
+#x::before{
+     content: "";
+     font-size: 1rem;
+     transform: rotate(-70deg);
+     width: 10%;
+     z-index: 1;
+     background-color: rgb(120, 130, 222);
+     border-radius: 80%;
+     height: 40px;
+}
+
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
 }
